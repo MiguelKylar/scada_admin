@@ -1,0 +1,58 @@
+html {
+  background: url("cuadricula_transp.png") white;
+  margin: 10px;
+  padding: 10px;
+}
+img {
+    border: black 2px solid;
+}
+
+#herramientas {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    /* border-radius: 58px 58px 58px 58px; */
+    -moz-border-radius: 58px 58px 58px 58px;
+    border: 0px solid #000000;
+}
+#nodo {
+    width: 100%;
+    position: relative;
+    left: 33px;
+    top: 5px;
+    cursor: pointer;
+}
+
+	body{
+		background-color: #fc9;
+		font-family: sans-serif;
+		font-size: 0.875em;
+	}
+	.azul, .rojo{
+		width: 25px;
+		height: 20px;
+		position: absolute;
+	}
+	.azul{
+		background-color: #33c;
+	}
+	.rojo{
+		background-color: #c33;
+	}
+	.suelta{
+		padding: 10px;
+		border: 1px solid #ddd;
+		width: 200px;
+		float: right;
+		text-align: center;
+		margin: 10px;
+	}
+	#sueltarojo{
+		background-color: #f99;
+	}
+	#sueltaazul{
+		background-color: #99f;
+		clear: both;
+	}
+	

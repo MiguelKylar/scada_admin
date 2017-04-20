@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* {margin:0;padding:0;border:0 none;position:relative;transform-style: preserve-3d;}
+html, body {
+  background-size: cover;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+ html{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+  overflow-y: auto;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+
+figure {
+  padding: 0 1rem; 
+  
+}
+figure img {
+  max-width: 100%;
+}
+figcaption {
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  text-aling: center;
+}
+.scroll {
+  position: absolute;
+  transform-origin: left center;
+}
+.una {
+    transform: translate3d(0,0,.7px) scale(.2);
+    top: -147px;
+    left: 44.28%;
+}
+.dos {
+    transform: translate3d(0,0,-2px) scale(2);
+    top: -56px;
+    right: 0%;
+    z-index: 10;
+    transform-origin: center;
+}
+.tres {
+    transform: translate3d(0,0,-2px) scale(2);
+    top: -415px;
+    right: 0%;
+    transform-origin: center;
+    z-index: 9;
+}
+.cuatro {
+    transform: translate3d(0,0,-2px) scale(2);
+    top: -434px;
+    right: 0%;
+    transform-origin: center;
+    z-index: 8;
+}
+.cinco {
+    transform: translate3d(0,0,-2px) scale(2);
+    top: -441px;
+    right: 0%;
+    transform-origin: center;
+    z-index: 7;
+}
+.seis {
+    transform: translate3d(0,0,-2px) scale(2);
+    top: -540px;
+    right: 76%;
+    transform-origin: center;
+    z-index: 6;
+}
+.siete {
+    transform: translate3d(0,0,-2px) scale(2);
+    top: 358px;
+    right: 0%;
+    transform-origin: center;
+    z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
