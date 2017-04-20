@@ -4,7 +4,7 @@ session_start();
 $id_empresa = $_SESSION['id_empresa'];
 ?>
 <html>
-    <head>
+    <head> 
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
