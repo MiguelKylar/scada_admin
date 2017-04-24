@@ -1,7 +1,10 @@
 <?php
-$id_elemento = $_POST['id_elemento'];
+
 $id_empresa = $_POST['id_empresa'];
 include("bd.php");
+
+if (isset($_POST['id_elemento'])){
+$id_elemento = $_POST['id_elemento'];   
 $sql = "select * from elemento_aplicacion where id_elemento = $id_elemento order by id_elemento asc";
 $consulta = mysql_query($sql, $conEmp);
 $i=0;
@@ -14,6 +17,7 @@ while($datatmp = mysql_fetch_assoc($consulta)) {
 		$elementos[$i]['aplicacion'] = $datatmp1['aplicacion']; 
 	}
 	$i++;	
+}
 }
 $i=0;
 
