@@ -3,6 +3,9 @@ $id_elemento = $_POST['id_elemento'];
 $id_elementoOriginal = $_POST['id_elementoOriginal'];
 include("bd.php");
 
+echo $sql = "delete from elemento_aplicacion where id_elemento = $id_elementoOriginal";
+$consulta = mysql_query($sql, $conEmp);
+
 $sql = "select * from elemento_aplicacion where id_elemento = $id_elemento";
 $consulta = mysql_query($sql, $conEmp);
 while($datatmp = mysql_fetch_array($consulta)) {
