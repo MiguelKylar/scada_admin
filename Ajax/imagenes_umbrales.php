@@ -6,6 +6,6 @@ $inputImgUp = $_POST['inputImgUp'];
 $inputImgNeutral = $_POST['inputImgNeutral'];
 include("bd.php");
 
-echo $sql= "UPDATE `elemento` SET `img`='$img',`img_neutral`='$inputImgNeutral',`img_down`='$inputImgDown',`img_up`='$inputImgUp' WHERE id_elemento =$id_elemento";
+$sql= "UPDATE `elemento` SET `img`='$img',`img_neutral`='$inputImgNeutral',`img_down`='$inputImgDown',`img_up`='$inputImgUp' WHERE id_elemento =$id_elemento";
 $consulta = mysql_query($sql, $conEmp);
 

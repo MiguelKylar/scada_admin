@@ -1,26 +1,15 @@
 html {
   background: url("cuadricula_transp.png") white;
-  margin: 10px;
-  padding: 10px;
 }
 img {
     border: black 2px solid;
 }
 
 #herramientas {
-    height: 10%;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    /* border-radius: 58px 58px 58px 58px; */
-    -moz-border-radius: 58px 58px 58px 58px;
-    border: 0px solid #000000;
+
 }
 #nodo {
     width: 100%;
-    position: relative;
-    left: 33px;
-    top: 5px;
     cursor: pointer;
 }
 

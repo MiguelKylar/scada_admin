@@ -339,6 +339,7 @@ $id_empresa = $_SESSION['id_empresa'];
                 },
                 success: function (resp) {
                     console.log(resp)
+                    swal("Guardado!", "", "success")
                 }
             });
         }
@@ -549,7 +550,6 @@ $id_empresa = $_SESSION['id_empresa'];
                 <li style="width: 52px;height: 60px;"><img onclick="agregarElemento3()" title="agregar tubo" id="nodo" src="imagenes/gauge.png" alt="agregar Elemento Valor"></li>
                 <li style="width: 52px;height: 60px;"><img onclick="agregarElemento4()" title="agregar tubo" id="nodo" src="imagenes/label.png" alt="agregar Elemento Valor"></li>
                 <li style="width: 52px;height: 60px;"><img onclick="guardarElemento()" title="guardar" id="nodo" src="imagenes/save.png" alt="guardar"></li>
-                <li style="width: 52px;height: 60px;"><img onclick="guardarElemento()" title="guardar" id="nodo" src="imagenes/well.png" alt="guardar"></li>
             </ul>
         </div>
         <!-- ************************************************************************************************************************************************************************************** -->
@@ -604,19 +604,19 @@ $id_empresa = $_SESSION['id_empresa'];
                                     <div class="form-group">
                                         <label for="inputImgDown" class="col-sm-2 control-label">Imagen bajo el umbral</label>
                                         <div class="col-sm-10">
-                                            <input style="width: 180px;" type="password" class="form-control" id="inputImgDown" placeholder="imagenes/img.png">
+                                            <input style="width: 180px;" type="text" class="form-control" id="inputImgDown" placeholder="imagenes/img.png">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="inputImgUp" class="col-sm-2 control-label">Imagen sobre el umbral</label>
                                         <div class="col-sm-10">
-                                            <input style="width: 180px;" type="password" class="form-control" id="inputImgUp" placeholder="imagenes/img.png">
+                                            <input style="width: 180px;" type="text" class="form-control" id="inputImgUp" placeholder="imagenes/img.png">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="inputImgNeutral" class="col-sm-2 control-label">Imagen entre el umbral</label>
                                         <div class="col-sm-10">
-                                            <input style="width: 180px;" type="password" class="form-control" id="inputImgNeutral" placeholder="imagenes/img.png">
+                                            <input style="width: 180px;" type="text" class="form-control" id="inputImgNeutral" placeholder="imagenes/img.png">
                                         </div>
                                     </div>
                                 </form>

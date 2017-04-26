@@ -6,17 +6,17 @@ $json = json_decode($json, true);
 $sql = "";
 for ($m = 0; $m < $largo; $m++){
 	$array = json_decode($json[$m], true);
-	echo $top    = $array["_top"];    echo "\n";
-	echo $left   = $array['_left'];   echo "\n";
-	echo $width  = $array['_width'];  echo "\n";
-	echo $heigth = $array['_heigth']; echo "\n";
-	echo $img    = $array['_img'];    echo "\n";
-	echo $tipo    = $array['_tipo'];   echo "\n";
-	echo $idelemento    = $array['_idelemento'];    echo "\n";
-	echo $zIndex    = $array['_zIndex'];    echo "\n";
+	 $top    = $array["_top"];    
+	 $left   = $array['_left'];   
+	 $width  = $array['_width'];  
+	 $heigth = $array['_heigth']; 
+	 $img    = $array['_img'];    
+	 $tipo    = $array['_tipo'];   
+	 $idelemento    = $array['_idelemento'];    
+	 $zIndex    = $array['_zIndex'];    
 	if($tipo == 3){
-	echo $tamaño = $array['_tamaño'];   echo "\n";
-	echo $texto = $array['_texto'];   echo "\n";
+	 $tamaño = $array['_tamaño'];   
+	 $texto = $array['_texto'];  
 		echo $sql= "UPDATE `elemento` SET  texto = '$texto', tipo = '$tipo',tamano_letra = '$tamaño', zIndex ='$zIndex',`top`='$top',`lefts`='$left',`width`='$width',`height`='$heigth' WHERE id_elemento =$idelemento;";
 		$consulta = mysql_query($sql, $conEmp);	
 	}else{

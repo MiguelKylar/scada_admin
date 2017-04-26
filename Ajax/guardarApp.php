@@ -1,6 +1,6 @@
 <?php
 include("bd.php");
-echo $data = $_POST['elemento'];
+ $data = $_POST['elemento'];
 $json = json_decode($data, true);
 $largo = count($json);
 
