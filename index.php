@@ -418,10 +418,15 @@ $id_empresa = $_SESSION['id_empresa'];
                     });
         }
         function Tamaño(id) {
+            
             var res = id.split("_");
             var x = res[1];
+            id = "l_"+x;
+            alert(id);
+            tm = document.getElementById(id).style.fontSize;
+            alert(tm);
             swal({
-                title: "Tamaño de letra",
+                title: "Tamaño de letra "+tm,
                 text: "Ingrese el tamaño de letra",
                 type: "input",
                 showCancelButton: true,
@@ -449,7 +454,7 @@ $id_empresa = $_SESSION['id_empresa'];
                                 nuevoElemento.draggable();
                                 nuevoElemento.resizable();
                                 $(document.body).append(nuevoElemento);
-                                swal("Bien", "Su url a cambiado a: " + inputValue, "success");
+                                swal("Bien", "El tamaño a cambiado a: " + inputValue, "success");
                             }
                         }
                     });
@@ -509,8 +514,8 @@ $id_empresa = $_SESSION['id_empresa'];
 
         function importar() {
             swal({
-                title: "Nueva Imagen",
-                text: "Ingrese la url de la imagen",
+                title: "Importar",
+                text: "Ingrese la id del elemento a importar",
                 type: "input",
                 showCancelButton: true,
                 closeOnConfirm: false,
